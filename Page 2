@@ -1,0 +1,12 @@
+<!Doctype html>
+
+
+<link rel="shortcut icon" type="image/jpg" href="favicon.png"/>
+<body>
+	<h1>
+		Hello World! Welcome!
+	</h1>
+	<p>
+		<a href="index.html">Link to next page.</a>
+	</p>
+</body>
