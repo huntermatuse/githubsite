@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IP Ping</title>
+    <script>
+      function pingIP() {
+        var ip = document.getElementById("ip-address").value;
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            alert("Ping success!");
+          } else {
+            alert("Ping failed.");
+          }
+        };
+        xhttp.open("GET", "http://" + ip, true);
+        xhttp.send();
+      }
+    </script>
+  </head>
+  <body>
+    <h1>IP Ping</h1>
+    <label for="ip-address">IP address:</label>
+    <input type="text" id="ip-address" name="ip-address"><br><br>
+    <button onclick="pingIP()">Ping</button>
+  </body>
+</html>
